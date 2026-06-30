@@ -6,12 +6,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="no-translate">
       <body>
         <nav>
           <Link href="/">Home</Link>
           {" | "}
-          <Link href="/blogs">Blogs</Link>          
+          <Link href="/blogs">Blogs</Link> 
+          {" | "}
+          <Link href="/users">Users</Link>          
           {" | "}
           <Link href="/blogs/new">Create new</Link>
         </nav>
